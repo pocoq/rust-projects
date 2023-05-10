@@ -7,19 +7,17 @@ use linfa::prelude::*;
 use linfa_trees::DecisionTree;
 
 // https://www.freecodecamp.org/news/how-to-build-a-machine-learning-model-in-rust/
-fn main() {
-    // let (train, test) = linfa_datasets::iris().split_with_ratio(0.9);
-    let dataset = get_dataset();
-    let iris_dataset = linfa_datasets::iris();
-    println!("{:?}", dataset);
-    println!("{:?}", iris_dataset);
 
-    let (train, test) = dataset.split_with_ratio(0.8);
+fn main() {
+    // let dataset = get_dataset();
+    // println!("{:?}", dataset);
+
+    let (train, test) = linfa_datasets::iris().split_with_ratio(0.9);
     let model = DecisionTree::params().fit(&train).unwrap();
     let predictions = model.predict(&test);
 
     println!("{:?}", predictions);
-    println!("{:?}", dataset.targets);
+    println!("{:?}", test.targets);
 }
 
 fn get_dataset() -> Dataset<f32, i32, ndarray::Dim<[usize; 1]>> {
