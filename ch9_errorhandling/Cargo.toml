@@ -1,5 +1,5 @@
 [package]
-name = "iter_clos"
+name = "ch9_errorhandling"
 version = "0.1.0"
 edition = "2021"
 

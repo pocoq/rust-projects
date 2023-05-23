@@ -1,4 +1,4 @@
-use auto_test as at;
+use ch11_autotest as at;
 
 #[test]
 fn it_larger_can_hold_smaller() {
