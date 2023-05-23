@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "ch3_common"
+name = "ch10_generictrait"
 version = "0.1.0"

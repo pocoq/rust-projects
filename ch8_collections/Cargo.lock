@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "collections"
+name = "ch8_collections"
 version = "0.1.0"
 dependencies = [
  "itertools",

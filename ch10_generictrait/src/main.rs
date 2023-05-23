@@ -103,7 +103,7 @@ pub mod generic {
 }
 
 pub mod traits {
-    use generic_traits::{NewsArticle, Summary, Tweet};
+    use ch10_generictrait::{NewsArticle, Summary, Tweet};
 
     pub fn main() {
         let tweet = Tweet {
