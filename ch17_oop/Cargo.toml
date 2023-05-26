@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "gui",
+	"traits",
+	"blog_lib",
+	"blog"
+]
